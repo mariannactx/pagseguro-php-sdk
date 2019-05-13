@@ -57,13 +57,15 @@ trait Item
         }
     }
 
+    //@mariannactx
     public function getItems()
     {
-        return current($this->items);
+        return $this->items;
     }
 
+    //@mariannactx
     public function itemLenght()
     {
-        return count(current($this->items));
+        return count((array) current($this->items));
     }
 }
